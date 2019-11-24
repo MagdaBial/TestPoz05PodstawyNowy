@@ -1,3 +1,5 @@
+package obiektowosc;
+
 public class Car {
 
     //Atrybuty klasy
@@ -8,7 +10,7 @@ public class Car {
     private Integer predkosc;
 
     //Konstruktor
-    Car(String model, String marka, Integer RokProdukcji) {
+    public Car(String model, String marka, Integer RokProdukcji) {
         this.model = model;
         this.marka = marka;
         this.RokProdukcji = RokProdukcji;
