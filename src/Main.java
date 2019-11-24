@@ -18,6 +18,10 @@ public class Main {
         return imie;
     }
 
+    public static Double cenaBrutto(Double cena) {
+        return cena*1.23;
+    }
+
     public static void przedstawSie (String imie) {
         System.out.println("Moje imie to "+ imie);
     }
@@ -140,11 +144,6 @@ public class Main {
 
         System.out.println(message);
 
-        public static Double cenaBrutto(Double cena) {
-            return cena*1,23;
-        }
-
-        public static void main(String[] args) {
         HashMap<String, Double> owoce = new HashMap<>();
         owoce.put("jablko", 2.5);
         owoce.put("banan", 4.8);
@@ -155,7 +154,7 @@ public class Main {
         nazwyOwocow.add("gruszka");
 
         Double cenaSumaryczna = 0.0;
-        for(Integer i =0; i<owoce.size(); i++) {
+        for( i =0; i<owoce.size(); i++) {
             String owoc = nazwyOwocow.get(i);
             cenaSumaryczna += cenaBrutto(owoce.get(owoc));
             System.out.println(owoc);
