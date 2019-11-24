@@ -1,7 +1,12 @@
-import javax.xml.namespace.QName;
+import dziedzicienie.Man;
+import dziedzicienie.Woman;
+import obiektowosc.Car;
+import obiektowosc.Human;
 
 public class Obiektowość {
     public static void main(String[] args) {
+
+    Human.opiszKlase();
 
         Human czlowiek1 = new Human("Kasia", "Nowakowska", 1991);
         //Metoda PrzedstawSię jest dostępna, bo jest public
@@ -29,5 +34,19 @@ public class Obiektowość {
         Car bmw = new Car( "m3", "bmw", 2015);
         bmw.przyspiesz(152);
         bmw.OpiszAuto();
-    }
+
+        //Obiekt klasy Womandziedziczącej po Human
+        Woman kobieta1 = new Woman ( "Kasia", "Kowalska",2007 );
+        kobieta1.przedstawSie();
+        kobieta1.setBirthYear(2009);
+        kobieta1.getName();
+
+        Man mezczyzna1 = new Man("Tmen", "Gorny", 1988);
+        mezczyzna1.setWaga(70);
+        mezczyzna1.ocenSile();
+        mezczyzna1.przedstawSie();
+
+        mezczyzna1.setWaga(105);
+        mezczyzna1.ocenSile();
+        mezczyzna1.przedstawSie();
 }

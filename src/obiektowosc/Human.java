@@ -1,3 +1,5 @@
+package obiektowosc;
+
 public class Human {
 
     //Atrybuty klasy
@@ -6,12 +8,19 @@ public class Human {
     private Integer birthYear;
     private Integer age;
 
-    //Konstruktor
-    Human(String name, String surname, Integer birthYear) {
+    //Konstruktor wywolany przy inicjacji obiektu
+    public Human(String name, String surname, Integer birthYear) {
         this.name = name;
         this.surname = surname;
         this.birthYear = birthYear;
         this.age = this.obliczWiek();
+    }
+
+    //słówko static- pozwala dostac się do tej funkcji bez inicjacji obiektu
+    //nie możemy operować w niej na żadnych atrybutach/ metodach niestatycznych
+
+    public static  void opiszKlase(){
+        System.out.println("Klasa Human oblicza wiek i umożliwia przedstawienie się obiektu");
     }
 
     //metody klasy
